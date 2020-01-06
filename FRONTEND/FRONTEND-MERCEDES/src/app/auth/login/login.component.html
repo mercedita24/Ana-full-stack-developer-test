@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="login">
+    <div class="login-triangle"></div>
+
+    <h2 class="login-header">Login</h2>
+
+    <form #frmLogin="ngForm" class="login-container">
+      <p>
+        <input class="form-control" name="email" [(ngModel)]="usuario.email" placeholder="Email" type="email" required>
+      </p>
+      <p>
+        <input class="form-control" name="password" [(ngModel)]="usuario.password" placeholder="Password" type="password" required>
+      </p>
+      
+        <div class="col text-center">
+        <button type="submit" class="btn btn-info my-4" aling="center" (click)="login()">
+          <span>Iniciar Sesión</span>
+        </button>
+      </div>
+      
+    </form>
+  </div>
+</div>

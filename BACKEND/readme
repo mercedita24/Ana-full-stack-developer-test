@@ -1,1 +1,14 @@
-API creada en Laravel 5.8 
+***************************Backend*************************
+
+Para ejecutar el proyecto
+1- ejecutar composer install y composer update en la raiz del proyecto 
+2- crear el archivo.env (ver ejemplo del archivo ejemplo.env.txt adjunto en esta carpeta)
+3- generar la llave con el comando: php artisan key:generate 
+4- Generar la llave para jwt con el comando: php artisan jwt:secret 
+5- crear base de datos en mongo llamada "hugo".
+6- ejecutar el comando para el mapeo de las clases: php artisan migrate --seed
+
+***********************************************************
+
+Nota: La API fue creada en Laravel 5.8, PHP 7.4 y MongoDB
+Si tiene problemas de permisos ejecutar los comandos anteriores con sudo.

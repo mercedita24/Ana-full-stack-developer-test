@@ -1,0 +1,24 @@
+<hr class="my-4">
+<div class="container">
+<div class="mx-auto" style="width: 200px;">
+
+<form #vehiculoForm="ngForm">
+    <div class="form-group">
+      <label for="input-tipo">Nombre del Tipo de Vehiculo <span class="text-danger">*</span></label>
+      <input 
+      type="text" 
+      name="tipo"
+      class="form-control" 
+      id="tipo" 
+      placeholder="Tipo de Vehiculo"
+      [(ngModel)]="tipo.nombre"
+      #placa="ngModel" 
+      required
+      >
+    </div>
+    <button type="button" class="btn btn-success my-4" (click)="saveTipo()" >Guardar</button>
+    <button type="button" class="btn btn-secondary my-4"[routerLink]="['/menu']">Cancelar</button>
+</form>
+</div>
+</div>
+<hr class="my-4">
