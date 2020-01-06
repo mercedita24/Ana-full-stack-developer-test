@@ -7,12 +7,16 @@ Para ejecutar el proyecto
 4- Generar la llave para jwt con el comando: php artisan jwt:secret 
 5- crear base de datos en mongo llamada "hugo".
 6- ejecutar el comando para el mapeo de las clases: php artisan migrate --seed
+7- ejecutar el servidor local con el comando: php artisan serve
 
 ***************************Frontend************************
 
 1- situarse en la raiz del proyecto y ejecutar npm install
+2- ejecutar el servidor local con el comando: ng serve
 
 ************************************************************
 Nota: 
+--Una vez ejecutados los servidores locales ingresar a la siguiente direccion: http://localhost:4200
+  y logearse con el correo: mercedes@hello.com  y el password: 12345678
 --ejecute los comandos en sudo si tiene problemas con los permisos en ambas aplicaciones
 --Las tecnologias usadas fueron Laravel 5.8 y Angular 8. utilizando microservicios y autenticacion JWT
